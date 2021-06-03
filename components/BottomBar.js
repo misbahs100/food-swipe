@@ -7,17 +7,30 @@ export default function BottomBar({ handleLikePress, handlePassPress }) {
 
     <View style={styles.container}>
       <View />
-        <TouchableOpacity style={styles.button} onPress={handlePassPress}>
-          <FontAwesome name="thumbs-down" size={27} color="red"></FontAwesome>
-        </TouchableOpacity>
+
         <TouchableOpacity style={styles.button}>
-          <FontAwesome
-            name="thumbs-up"
-            size={27}
-            color="#3b5998"
-            onPress={handleLikePress}
+            <FontAwesome
+              name="thumbs-up"
+              size={27}
+              color="#3b5998"
+              onPress={handleLikePress}
+            ></FontAwesome>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.button}>
+            <FontAwesome 
+            name="comment" 
+            size={27} color="#185adb"
+            ></FontAwesome>
+          </TouchableOpacity>
+
+        <TouchableOpacity style={styles.button} onPress={handlePassPress}>
+          <FontAwesome 
+          name="share" 
+          size={27} color="#3b5998"
           ></FontAwesome>
         </TouchableOpacity>
+
       <View />
     </View>
   );

@@ -4,7 +4,7 @@ import Swipeable from "react-native-gesture-handler/Swipeable";
 import { RectButton } from "react-native-gesture-handler";
 import SwipeableImage from "./SwipeableImage";
 
-function Swipes({ users, currentIndex, handleLike, handlePass, swipesRef }) {
+function Swipes({ drinks, currentIndex, handleLike, handlePass, swipesRef }) {
 
   const [willLike, setWillLike] = useState(false);
   const [willPass, setWillPass] = useState(false);
@@ -13,7 +13,7 @@ function Swipes({ users, currentIndex, handleLike, handlePass, swipesRef }) {
     return (
 
       <RectButton style={styles.container}>
-        <SwipeableImage user={users[currentIndex + 1]}></SwipeableImage>
+        <SwipeableImage drink={drinks[currentIndex + 1]}></SwipeableImage>
       </RectButton>
     );
   };
@@ -21,7 +21,7 @@ function Swipes({ users, currentIndex, handleLike, handlePass, swipesRef }) {
   const renderRightActions = () => {
     return (
       <RectButton style={styles.container}>
-        <SwipeableImage user={users[currentIndex + 1]}></SwipeableImage>
+        <SwipeableImage drink={drinks[currentIndex + 1]}></SwipeableImage>
       </RectButton>
     );
   };
@@ -47,7 +47,7 @@ function Swipes({ users, currentIndex, handleLike, handlePass, swipesRef }) {
       onSwipeableRightWillOpen={() => setWillPass(true)}
     >
       <SwipeableImage
-        user={users[currentIndex]}
+        drink={drinks[currentIndex]}
         willLike={willLike}
         willPass={willPass}
       />
