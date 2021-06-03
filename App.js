@@ -15,9 +15,11 @@ export default function App() {
   async function fetchUsers() {
     try {
       const { data } = await axios.get(
-        "https://randomuser.me/api/?gender=female&results=50"
+        // "https://randomuser.me/api/?gender=female&results=50"
+        "https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a"
       );
-      setUsers(data.results);
+      setUsers(data.drinks);
+      console.log(user);
     } catch (error) {
       console.log(error);
       Alert.alert("Error getting users", "", [
