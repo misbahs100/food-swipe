@@ -5,9 +5,9 @@ import { FontAwesome5, FontAwesome } from '@expo/vector-icons'
 export default function TopBar() {
   return (
     <View style={styles.container}>
-      <FontAwesome5 name="fire" size={27} color="#F06795" />
-      <FontAwesome name="comments" size={27} color="#5c5c5c" />
-      <FontAwesome name="user" size={27} color="#5c5c5c" />
+      <FontAwesome5 name="bookmark" size={27} color="#ffc947" />
+      <FontAwesome name="cart-plus" size={27} color="#185adb" />
+      <FontAwesome name="user" size={27} color="#231e23" />
     </View>
   )
 }
