@@ -7,6 +7,7 @@ import BottomBar from "./components/BottomBar";
 import Swipes from "./components/Swipes";
 
 export default function App() {
+  // updated final version 1.0
   
   const [drinks, setDrinks] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Image } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
 export default function SwipeableImage({ drink }) {
+  // updated final version 1.0
   return (
     <View>
       <Image source={{ uri: drink.strDrinkThumb }} style={styles.photo} />

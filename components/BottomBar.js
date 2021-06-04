@@ -3,6 +3,7 @@ import { View, StyleSheet, TouchableOpacity } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
 export default function BottomBar({ handleLikePress, handlePassPress }) {
+  // updated final version 1.0
   return (
 
     <View style={styles.container}>

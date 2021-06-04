@@ -9,7 +9,7 @@ function Swipes({ drinks, currentIndex, handleLike, handlePass, swipesRef }) {
   const [willLike, setWillLike] = useState(false);
   const [willPass, setWillPass] = useState(false);
   const renderLeftActions = () => {
-
+// updated final version 1.0
     return (
 
       <RectButton style={styles.container}>

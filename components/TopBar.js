@@ -3,6 +3,7 @@ import { View, StyleSheet } from 'react-native'
 import { FontAwesome5, FontAwesome } from '@expo/vector-icons'
 
 export default function TopBar() {
+  // updated final version 1.0
   return (
     <View style={styles.container}>
       <FontAwesome5 name="bookmark" size={27} color="#ffc947" />
