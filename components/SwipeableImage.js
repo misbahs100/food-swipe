@@ -48,13 +48,13 @@ const styles = StyleSheet.create({
   },
   textPrimary: {
     color: "white",
-    fontSize: 34,
+    fontSize: 35,
     fontWeight: "bold",
   },
   textSecondary: {
     color: "white",
     marginLeft: 10,
-    fontSize: 24,
+    fontSize: 25,
   },
   textShadow: {
     textShadowColor: "rgba(0, 0, 0, 0.80)",
