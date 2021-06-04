@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
   },
+
   textPrimary: {
     color: "white",
     fontSize: 35,
