@@ -7,7 +7,6 @@ export default function SwipeableImage({ drink }) {
     <View>
       <Image source={{ uri: drink.strDrinkThumb }} style={styles.photo} />
       <View style={styles.textContainer}>
-
         <View style={styles.textRow}>
           <Text style={[styles.textPrimary, styles.textShadow]}>
             {drink.strDrink}
@@ -26,7 +25,6 @@ export default function SwipeableImage({ drink }) {
             {drink.strGlass}
           </Text>
         </View>
-        
       </View>
     </View>
   );
@@ -50,13 +48,13 @@ const styles = StyleSheet.create({
   },
   textPrimary: {
     color: "white",
-    fontSize: 35,
+    fontSize: 34,
     fontWeight: "bold",
   },
   textSecondary: {
     color: "white",
     marginLeft: 10,
-    fontSize: 25,
+    fontSize: 24,
   },
   textShadow: {
     textShadowColor: "rgba(0, 0, 0, 0.80)",
